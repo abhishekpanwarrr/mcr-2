@@ -1,0 +1,182 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+}
+
+body,
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  position:relative
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Random user css*/
+.random-user-container {
+  width: 400px;
+  height: min-height(300px);
+  border: 10px solid white;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #b6b3f3;
+}
+.user__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.header__icon {
+  font-size: 26px;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* Define the rotate animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to the loader */
+.loader-rotate {
+  animation: rotate 1s linear infinite;
+}
+
+.image__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+.image {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.image > span {
+  position: absolute;
+  top: -30;
+  right: -30;
+  width: 30px;
+  height: 20px;
+  color: white;
+  border-radius: 15px;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 3px;
+  background-color: #000;
+}
+.image > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.image__container > .image__name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.image__container > .image__username {
+  font-size: 0.65rem;
+}
+
+.location__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.location__container_inner {
+  display: flex;
+  gap: 20px;
+}
+.location_link_container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+.location_link_span {
+  font-size: 14px;
+}
+.location_link_container_inner {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user__info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+.user__infoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.user__infoBox > .user__infoKey {
+  font-size: 0.65rem;
+}
+.user__infoBox > .user__infoValue {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.chaicode {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: end;
+}
+
+/* No match page css */
+.no-match {
+  color: #fff;
+}
+.chai_code{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.chai-container{
+  top:3rem;
+  bottom:auto;
+}
